@@ -14,4 +14,5 @@ class MusicTracker
     fail "Track list is empty." if @track_list.empty?
     @track_list.join(", ")
   end
+  
 end

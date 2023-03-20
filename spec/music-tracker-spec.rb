@@ -30,11 +30,10 @@ RSpec.describe MusicTracker do
       expect(music.print_track_list).to eq "I will survive"
     end
 
-    it "prints one track when one track is given" do
+    it "prints two tracks when one track is given" do
       music = MusicTracker.new()
       music.listened_to("I will survive")
       music.listened_to("What a wonderful world") 
       expect(music.print_track_list).to eq "I will survive, What a wonderful world"
-
     end
 end
