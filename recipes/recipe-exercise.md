@@ -1,4 +1,4 @@
-# TaskTracker Class Design Recipe
+# Reminder Class Design Recipe
 
 ## 1. Describe the Problem
 
@@ -61,7 +61,7 @@ todo.remind_me_to("") # fails with "No task set."
 # 3
 todo = Reminder.new("Maddy")
 todo.remind_me_to("Walk the doggo")
-todo.complete("eat") # => fails "not in your to do list, try again"
+todo.complete("cook dinner") # => fails "It is not in your to do list, try again"
 
 # 4
 todo = Reminder.new("Maddy")
@@ -76,15 +76,15 @@ todo.remind() # => "Walk the dog, Maddy"
 # 6
 todo = Reminder.new("Maddy")
 todo.remind_me_to("Walk the doggo")
-todo.remind_me_to("eat")
+todo.remind_me_to("cook dinner")
 todo.remind() # => "Walk the dog, Maddy"
                      # "eat, Maddy"
 
 # 6
 todo = Reminder.new("Maddy")
 todo.remind_me_to("Walk the doggo")
-todo.remind_me_to("eat")
-todo.complete("eat") # => task_to_do = ["Walk the doggo"]   
+todo.remind_me_to("cook dinner")
+todo.complete("cook dinner") # => task_to_do = ["Walk the doggo"]   
 ```
 
 
