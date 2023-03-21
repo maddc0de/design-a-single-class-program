@@ -13,7 +13,7 @@ To learn and understand this, I am going to:
 
 [x] Test drive a single-class program.
 
-[] **Design a single-class program.**
+[x] **Design a single-class program.**
 
 [ ] Test drive a system of classes.
 
